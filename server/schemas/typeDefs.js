@@ -41,7 +41,12 @@ const typeDefs = gql`
       saveMovie(input: MovieInput): User
       removeMovie(movieId: ID!): User
     }
+
+    type Auth {
+        token: ID!
+        user: User
+    }
     
-    `
+    `;
 
 module.exports = typeDefs;
