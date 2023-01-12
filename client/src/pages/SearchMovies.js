@@ -16,7 +16,7 @@ const SearchMovies = () => {
     const [saveMovie] = useMutation(SAVE_MOVIE);
 
     useEffect(() => {
-        return () => saveMovieIds(saveMovieIds);
+        return () => saveMovieIds(savedMovieIds);
     });
 
     const handleFormSubmit = async (event) => {
@@ -55,7 +55,7 @@ const SearchMovies = () => {
 
     const handleSaveMovie = async (movieId) => {
 
-        const movieToSave = searchMovies.find((movie) => movie.movieId === movieId);
+        const movieToSave = searchedMovies.find((movie) => movie.movieId === movieId);
 
         const token = Auth.loggedIn() ? Auth.getToken() : null;
 

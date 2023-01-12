@@ -17,7 +17,7 @@ const AppNavbar = () => {
                     <Navbar.Brand as={Link} to='/'>
                         MovieBuster Search
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-aria-controls='navbar' />
+                    <Navbar.Toggle aria-controls='navbar' />
                     <Navbar.Collapse id='navbar'>
                         <Nav className='ml-auto'>
                             <Nav.Link as={Link} to='/'>
