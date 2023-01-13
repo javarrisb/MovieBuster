@@ -35,9 +35,9 @@ const SearchMovies = () => {
                 throw new Error('There was a problem!');
             }
 
-            const { items } = await response.json();
+            const { results } = await response.json();
 
-            const movieData = items.map((movie) => ({
+            const movieData = results.map((movie) => ({
                 original_title: movie.original_title,
                 overview: movie.overview || ['There is no description to show'],
                 rating: movie.rating,
@@ -49,7 +49,7 @@ const SearchMovies = () => {
             }));
             console.log(movieData);
 
-            if(items.length === 0) {
+            if(results.length === 0) {
                 setNoMovies(true)
             } else {
                 setNoMovies(false)

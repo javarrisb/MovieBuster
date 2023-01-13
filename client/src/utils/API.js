@@ -49,5 +49,5 @@ export const deleteMovie = (movieId, token) => {
 };
 
 export const findTMDB = (query) => {
-    return fetch(`https://api.themoviedb.org/3/movie/550?api_key=a3309a0cfa82513a72179b306274a0c3&query=${query}`);
+    return fetch(`https://api.themoviedb.org/3/search/movie/?api_key=a3309a0cfa82513a72179b306274a0c3&query=${query}`);
 }
