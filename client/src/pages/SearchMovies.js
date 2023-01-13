@@ -138,7 +138,7 @@ const SearchMovies = () => {
                                                             className='btn-block btn-info'
                                                             onClick={() => handleSaveMovie(movie.movieId)}>
                                                                 {savedMovieIds?.some((savedMovieId) => savedMovieId === movie.movieId)
-                                                                ? 'This movie has been saved already!'
+                                                                ? 'This movie has been saved!'
                                                             : 'Save this Movie!'}
                                                             </Button>
                                                         )}

@@ -20,7 +20,7 @@ const SavedMovies = () => {
       </h4>
     );
   }
-  // create function that accepts the movie's mongo _id value as param and deletes the movie from the database
+  
   const handleDeleteMovie = async (movieId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
@@ -34,6 +34,7 @@ const SavedMovies = () => {
       });
       
       removeMovieId(movieId);
+
     } catch (err) {
       console.error(err);
     }
@@ -46,7 +47,7 @@ const SavedMovies = () => {
 
 return (
     <>
-    <Jumbotron fluid className='text-light bg-dark'>
+    <Jumbotron fluid className='text-dark bg-success'>
         <Container>
             <h1>Seeing saved movies!</h1>
             </Container>
