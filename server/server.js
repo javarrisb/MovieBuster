@@ -14,13 +14,12 @@ const startServer = async () => {
     const server = new ApolloServer({
     typeDefs,
     resolvers,
-    introspecton: true,
-    playground: true,
     context: authMiddleware
     });
+
     await server.start();
     server.applyMiddleware({ app });
-    console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
+    console.log(`Use GraphQL at http://127.0.0.1:${PORT}${server.graphqlPath}`);
 }
 
 startServer();

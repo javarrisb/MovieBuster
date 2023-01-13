@@ -48,7 +48,7 @@ const LoginForm = () => {
     <>
     <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
         <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='secondary'>
-            Sorry, there was a porblem with your login credentials
+            Sorry, there was a problem with your login credentials
         </Alert>
         <Form.Group>
             <Form.Label htmlFor='email'>Email</Form.Label>

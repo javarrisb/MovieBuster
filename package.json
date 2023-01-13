@@ -4,10 +4,7 @@
   "description": "\"\"",
   "main": "server/server.js",
   "dependencies": {
-    "@apollo/client": "^3.5.10",
-    "apollo-server-express": "^2.25.3",
-    "concurrently": "^7.6.0",
-    "graphql": "^15.8.0"
+    "apollo-server-express": "^3.6.4"
   },
   "scripts": {
     "start": "node server/server.js",
@@ -28,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/javarrisb/MovieBuster/issues"
   },
-  "homepage": "https://github.com/javarrisb/MovieBuster#readme"
+  "homepage": "https://github.com/javarrisb/MovieBuster#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
 }

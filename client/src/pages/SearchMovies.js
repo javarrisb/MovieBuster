@@ -15,6 +15,8 @@ const SearchMovies = () => {
 
     const [saveMovie] = useMutation(SAVE_MOVIE);
 
+    const [noMovies, setNoMovies] = useState(false);
+
     useEffect(() => {
         return () => saveMovieIds(savedMovieIds);
     });
@@ -45,6 +47,13 @@ const SearchMovies = () => {
                 poster_path: movie.poster_path,
                 tagline: movie.tagline
             }));
+            console.log(movieData);
+
+            if(items.length === 0) {
+                setNoMovies(true)
+            } else {
+                setNoMovies(false)
+            }
             
             setSearchedMovies(movieData);
             setSearchInput('');
@@ -108,6 +117,9 @@ const SearchMovies = () => {
                                            ?  `Seeing ${searchedMovies.length} results:`
                                         : 'Search for a movie to start'} 
                                         </h2>
+                                        <h3>
+                                            {noMovies ? 'No movies were found' : ''}
+                                        </h3>
                                         <CardColumns>
                                             {searchedMovies.map((movie) => {
                                              return (
