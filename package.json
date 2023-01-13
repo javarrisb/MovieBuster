@@ -2,6 +2,9 @@
   "name": "moviebuster",
   "version": "1.0.0",
   "description": "\"\"",
+  "engines": {
+    "node": "16.17.0"
+  },
   "main": "server/server.js",
   "dependencies": {
     "apollo-server-express": "^3.6.4"
