@@ -86,9 +86,9 @@ const SearchMovies = () => {
 
     return (
         <>
-        <Jumbotron fluid className='text-light bg-dark'>
+        <Jumbotron fluid className='text-dark bg-success'>
             <Container>
-                <h1>Search Movies here!</h1>
+                <h1>Search movies here!</h1>
                 <Form onSubmit={handleFormSubmit}>
                     <Form.Row>
                         <Col xs={12} md={8}>
@@ -102,7 +102,7 @@ const SearchMovies = () => {
                             />
                             </Col>
                             <Col xs={12} md={4}>
-                                <Button type='submit' variant='success' size='lg'>
+                                <Button type='submit' variant='dark' size='lg'>
                                     Submit Search
                                     </Button>
                                     </Col>
@@ -123,14 +123,15 @@ const SearchMovies = () => {
                                         <CardColumns>
                                             {searchedMovies.map((movie) => {
                                              return (
-                                                <Card key={movie.movieId} border='light'>
+                                                <Card key={movie.movieId} border='dark'>
                                                     {movie.poster_path ? (
                                                         <Card.Img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={`Poster for ${movie.original_title}`} variant='top' />
                                                     ) :null}
                                                     <Card.Body>
+                                                        <p className='small'>{movie.original_title}</p>
+                                                        <p className='small'>Overview: {movie.overview}</p>
                                                         <p className='small'>Release Date: {movie.release_date}</p>
-                                                        <p className='small'>Rating: {movie.rating} /10</p>
-                                                        <p className='small'>Tagline: {movie.tagline}</p>
+                                                        
                                                         {Auth.loggedIn() && (
                                                             <Button 
                                                             disabled={savedMovieIds?.some((savedMovieId) => savedMovieId === movie.movieId)}

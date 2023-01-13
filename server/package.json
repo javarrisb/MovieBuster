@@ -4,8 +4,9 @@
   "description": "\"\"",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
-    "start": "node server.js"
+    
+    "start": "node server.js",
+    "server": "nodemon index.js --ignore client"
   },
   "repository": {
     "type": "git",
