@@ -54,7 +54,7 @@ return (
             <Container>
                 <h2>
                     {userData.savedMovies.length
-                    ? `Seeing ${userData.savedMovies.length} saved ${userData.savedMovies.length === 1 ? 'movie' : 'movies'};`
+                    ? `Seeing ${userData.savedMovies.length} saved ${userData.savedMovies.length === 1 ? 'movie' : 'movies'}`
                     : 'You have no saved movies!'}
                     </h2>
                     <CardColumns>
