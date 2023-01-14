@@ -2,9 +2,9 @@
 
 # Description
 
+- MovieBuster is an app that allows users to search movies and saved their favorite movies to their personal watch list! 
+
  
-
-
 # Table of Contents
 
   - [Description](#description)
@@ -30,7 +30,8 @@
   
   # Screenshot 
   
-  
+  ![movieb1](https://user-images.githubusercontent.com/89273544/212488565-a5dfdf9b-f364-4239-ab9e-d0e3b44f3ad8.jpeg)
+
 
   
   # Contributions
