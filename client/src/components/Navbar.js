@@ -12,7 +12,7 @@ const AppNavbar = () => {
 
     return (
         <>
-            <Navbar bg='success' variant='dark' expand='lg'>
+            <Navbar bg='success' variant='light' expand='lg'>
                 <Container fluid>
                     <Navbar.Brand as={Link} to='/'>
                         MovieBuster Search

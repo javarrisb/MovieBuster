@@ -102,7 +102,7 @@ const SearchMovies = () => {
                             />
                             </Col>
                             <Col xs={12} md={4}>
-                                <Button type='submit' variant='dark' size='lg'>
+                                <Button type='submit' variant='dark' size='sm'>
                                     Submit Search
                                     </Button>
                                     </Col>
@@ -112,18 +112,18 @@ const SearchMovies = () => {
                                     </Jumbotron>
 
                                     <Container>
-                                        <h2>
+                                        <h3>
                                            {searchedMovies.length
                                            ?  `Seeing ${searchedMovies.length} results:`
                                         : 'Search for a movie to start'} 
-                                        </h2>
+                                        </h3>
                                         <h3>
                                             {noMovies ? 'No movies were found' : ''}
                                         </h3>
                                         <CardColumns>
                                             {searchedMovies.map((movie) => {
                                              return (
-                                                <Card key={movie.movieId} border='dark'>
+                                                <Card key={movie.movieId} border='success'>
                                                     {movie.poster_path ? (
                                                         <Card.Img src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={`Poster for ${movie.original_title}`} variant='top' />
                                                     ) :null}
