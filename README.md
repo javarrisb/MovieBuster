@@ -2,8 +2,7 @@
 
 # Description
 
-- MovieBuster is an app that allows users to search movies and saved their favorite movies to their personal watch list! 
-
+ MovieBuster is an app that allows users to search movies and saved their favorite movies to their personal  list! MovieBuster was built using the MERN stack with a MongoDB database, React front end and Node.js/Express.js server. 
  
 # Table of Contents
 
@@ -19,7 +18,7 @@
   
   To install this app:
   - Clone this repository
-  - run 'npm install' for all the necessary packages and dependencies
+  - run 'npm install' for all the necessary packages and dependencies in the root project folder, server folder and client folder
   
   
   # Usage
